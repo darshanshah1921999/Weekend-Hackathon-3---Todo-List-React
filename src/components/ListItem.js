@@ -12,7 +12,7 @@ function ListItem(props) {
     props.handleDelete(props.id);
   };
   const handleSaveClick = () => {
-    if (props.value !== task) {
+    if (props.value !== task && task) {
       setIsEdit(!isEdit);
       props.handleSave(props.id, task);
     }

@@ -29,7 +29,6 @@ function App() {
       }
       return task;
     });
-    console.log(id + " " + value);
     setTaskList(copyTaskList);
   };
   return (

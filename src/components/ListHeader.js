@@ -5,7 +5,9 @@ function ListHeader(props) {
   const [task, setTask] = React.useState("");
   const handleClick = () => {
     setTask("");
-    props.handleClick(task);
+    if (task) {
+      props.handleClick(task);
+    }
   };
   return (
     <>
